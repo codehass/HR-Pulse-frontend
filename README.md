@@ -24,33 +24,34 @@
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
 
-# 📖 Project title <a name="about-project"></a>
+# 📖 HR Pulse Frontend <a name="about-project"></a>
 
-Add a brief description of your project here
+HR Pulse Frontend is a modern, intuitive web application designed for HR professionals and administrators. It provides a visual interface for managing job postings, analyzing candidate skills, and accessing predictive insights powered by our backend AI.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
   <ul>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://www.tailwindcss.com/">Tailwind CSS</a></li>
-    <li><a href="https://styled-components.com/">Styled-components</a></li>
-    <li><a href="https://supabase.com/">Supabase</a></li>
+    <li><a href="https://nextjs.org/">Next.js 16</a></li>
+    <li><a href="https://react.dev/">React 19</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS v4</a></li>
+    <li><a href="https://lucide.dev/">Lucide React</a></li>
+    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
   </ul>
 
 ### Key Features <a name="key-features"></a>
 
-- **Feature one**
-- **Feature two**
-- **Feature three**
-- **Feature four**
+- **Interactive Dashboard**: Real-time overview of HR metrics and activities.
+- **Skill Prediction Interface**: user-friendly interface to trigger and view skill extraction results.
+- **User Authentication**: Secure login and registration flows for HR staff.
+- **Responsive Design**: Fully optimized for various devices using Tailwind CSS.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](link to deployed project)
+- [Live Demo Link](https://hr-pulse.example.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +64,8 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:codehass/front-end-next-template.git
+  git clone https://github.com/codehass/HR-Pulse-frontend.git
+  cd HR-Pulse-frontend
 ```
 
 ### Install
@@ -71,11 +73,10 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd front-end-next-template
   npm install
 ```
 
-create `.env` file and add your environment variables. You can copy `.env.example` as a template.
+Create a `.env` file and add your environment variables. You can copy `.env.example` as a template.
 
 ```sh
   cp .env.example .env
@@ -83,11 +84,15 @@ create `.env` file and add your environment variables. You can copy `.env.exampl
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project in development mode, execute the following command:
 
 ```sh
   npm run dev
 ```
+
+### Login
+
+The default login page is available at `/login`. After authentication, you will be redirected to the `/dashboard`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,10 +108,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Feature one**
-- **Feature two**
-- **Feature three**
-- **Feature four**
+- **Data Visualization**: Advanced charts and graphs for HR trends.
+- **Dark Mode Support**: Seamless switching between light and dark themes.
+- **Multi-language Support**: i18n integration for international HR teams.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,13 +118,13 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/codehass/the-wild-oasis/issues).
+Feel free to check the [issues page](https://github.com/codehass/HR-Pulse-frontend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Join us in supporting our project to improve cabin management in hotels! Your help makes a big difference in making stays smoother and guests happier. Let's work together to bring positive change to the hospitality industry!
+If you find this interface helpful, please consider giving the repository a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
