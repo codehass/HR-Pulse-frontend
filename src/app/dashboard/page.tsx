@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { fetchApi } from "@/lib/api";
+import { useAuth } from "@/hooks/useAuth";
 import { Search, Loader2, Briefcase, DollarSign, Building } from "lucide-react";
 
 type Job = {
@@ -14,6 +15,7 @@ type Job = {
 };
 
 export default function Dashboard() {
+  const { loading: authLoading } = useAuth();
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -65,6 +67,14 @@ export default function Dashboard() {
       setIsSearching(false);
     }
   };
+
+  if (authLoading) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <Loader2 className="animate-spin text-primary" size={48} />
+      </div>
+    );
+  }
 
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

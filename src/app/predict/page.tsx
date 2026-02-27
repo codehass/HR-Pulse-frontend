@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { fetchApi } from "@/lib/api";
+import { useAuth } from "@/hooks/useAuth";
 import { Loader2, DollarSign, Briefcase } from "lucide-react";
 
 const REVENUE_MAP: Record<string, number> = {
@@ -21,6 +22,7 @@ const REVENUE_MAP: Record<string, number> = {
 };
 
 export default function Predict() {
+  const { loading: authLoading } = useAuth();
   const [formData, setFormData] = useState({
     revenue: 'Unknown / Non-Applicable',
     years_exp: 3,
@@ -104,6 +106,14 @@ export default function Predict() {
       </div>
     );
   };
+
+  if (authLoading) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <Loader2 className="animate-spin text-primary" size={48} />
+      </div>
+    );
+  }
 
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
